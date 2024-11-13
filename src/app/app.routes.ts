@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
-    {path: 'login', component: AuthComponent}
+    {path: 'login', component: AuthComponent},
+    {path: '**', redirectTo: 'login'}
 ];
 
 @NgModule({
